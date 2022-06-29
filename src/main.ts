@@ -1,6 +1,17 @@
 import './style.css'
 
-const state = {
+type Email = {
+  from: string;
+  header: string;
+  content: string;
+  emailAddress: string;
+  img:string;
+  read: boolean;
+}
+type State = {
+ emails: Email[]
+}
+const state: State = {
   emails: [
     {
       from: 'Nico',
