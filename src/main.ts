@@ -149,8 +149,6 @@ function renderEmailDetails () {
 }
 
 function render () {
-  // if there is a selected email, show the details
-  // if not, show the list
   if (state.selectedEmail) renderEmailDetails()
   else renderEmailList()
 }
